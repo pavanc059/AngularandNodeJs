@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    {% for DAta in data %}
+    <h1>Welcome to{{ DAta.Name }}</h1>
+    <p>{{ DAta.Country }}</p>
+    <p>{{ DAta.City }}</p>
+    <p>{{ DAta.Salary }}</p>
+    <p>{{ DAta.CreationDate }}</p>
+    {% endfor %}
+  </body>
+</html>
